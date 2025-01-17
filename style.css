@@ -14,3 +14,122 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url('images/header.jpg'); /* Replace 'header.jpg' with your image */
+   background-size: cover; /* Ensures the image covers the entire header */
+   background-position: center; /* Centers the image */
+   width: 100%; /* Full width */
+   min-height: 500px; /* Minimum height for the header */
+   position: relative; /* Allows child elements to position themselves */
+}
+nav {
+   background-image: url('images/logo.svg'); /* Adds the logo */
+   background-size: 60px; /* Sets the logo size */
+   background-repeat: no-repeat;
+   background-position: 10px 5px; /* Positions the logo */
+   padding: 20px; /* Adds spacing around the logo */
+   height: 100px; /* Sets the height of the navigation bar */
+   display: flex; /* Makes navigation items align horizontally */
+   align-items: center;
+}
+nav ul {
+   list-style-type: none; /* Removes bullet points */
+   display: flex; /* Aligns links horizontally */
+   margin-left: 80px; /* Pushes links to the right of the logo */
+   gap: 20px; /* Adds space between links */
+}
+
+nav a {
+   text-decoration: none; /* Removes underline */
+   color: #51279b; /* Sets link color */
+   font-weight: 600; /* Slightly bolder font */
+   padding: 10px;
+}
+
+nav a:hover {
+   color: #8662c7; /* Changes color on hover */
+   text-decoration: underline;
+}
+header div {
+   position: absolute; /* Allows positioning relative to the header */
+   top: 50%; /* Centers vertically */
+   left: 80px; /* Aligns with the navigation links */
+   transform: translateY(-50%); /* Adjusts for exact vertical centering */
+   color: white; /* Makes text white */
+}
+header h2 {
+   font-size: 48px; /* Large, bold title */
+   margin-bottom: 0.5rem;
+}
+
+header p {
+   font-size: 24px; /* Smaller paragraph text */
+   margin-bottom: 1.5rem;
+}
+
+header div a {
+   background-color: #51279b; /* Button background color */
+   color: white; /* Button text color */
+   padding: 10px 20px; /* Adds padding around the text */
+   text-decoration: none; /* Removes underline */
+   border-radius: 5px; /* Rounds button edges */
+}
+
+header div a:hover {
+   background-color: #8662c7; /* Changes button color on hover */
+}
+main {
+   display: flex; /* Enables flexbox layout */
+   flex-wrap: wrap; /* Allows cards to wrap to the next line */
+   gap: 10px; /* Adds space between cards */
+   justify-content: space-between; /* Distributes cards evenly */
+}
+
+.card {
+   background-color: white; /* White background */
+   width: calc(33% - 10px); /* 3 cards in a row with spacing */
+   margin: 10px 5px;
+   border-radius: 5px; /* Slightly rounded corners */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+.card img {
+   width: 100%; /* Full width of the card */
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.card div {
+   padding: 20px 10px; /* Adds spacing around card content */
+}
+
+.card h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.card .description {
+   font-size: 12px; /* Smaller text for descriptions */
+   margin-bottom: 10px;
+}
+.social {
+   display: flex; /* Aligns icons horizontally */
+   gap: 10px; /* Space between icons */
+   font-size: 12px;
+   margin-top: 1rem;
+}
+
+.social .heart,
+.social .comment {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px; /* Adds space between icon and text */
+}
+
+.social .heart {
+   background-image: url('images/heart.png'); /* Adds heart icon */
+}
+
+.social .comment {
+   background-image: url('images/comment.png'); /* Adds comment icon */
+}
+
